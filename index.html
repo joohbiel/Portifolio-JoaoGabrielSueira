@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: #D3D3D3;
-            font-family: Arial, sans-serif; /* Fonte para o conteúdo */
+            font-family: 'Georgia', serif; /* Fonte Georgia para o conteúdo */
             margin: 0;
         }
         header {
@@ -25,7 +25,6 @@
             padding: 0 15px;
         }
         .logo {
-            font-family: 'Georgia', serif; /* Fonte para o nome "Biel Sueira" */
             font-size: 36px; /* Aumentei um pouco o tamanho */
             font-weight: bold;
             color: white;
@@ -37,10 +36,15 @@
             font-weight: bold;
             padding: 10px 15px;
             border-radius: 5px;
+            transition: background-color 0.3s, border 0.3s;
         }
-        nav a:hover, nav a.active {
+        nav a:hover {
             background-color: white;
             color: #00008B;
+            border: 2px solid #00008B; /* Borda aparece ao passar o mouse */
+        }
+        nav a:focus {
+            outline: none;
         }
         main {
             max-width: 800px;
