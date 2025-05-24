@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/main.css">
     <style>
         body {
-            background-color: #D3D3D3;
+            background-color: #F1F1F1;
             font-family: 'Georgia', serif;
             margin: 0;
         }
@@ -15,7 +15,7 @@
             background-color: #00008B;
             padding: 10px 0;
             color: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .container {
             max-width: 1100px;
@@ -39,7 +39,6 @@
             padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            opacity: 0.9;
         }
         nav a:hover {
             background-color: #4B72A2;
@@ -67,19 +66,12 @@
             font-weight: bold;
             color: #00008B;
         }
-        .cards-container {
-            display: flex;
-            gap: 20px;
-            justify-content: space-between;
-            margin-top: 20px;
-            flex-wrap: wrap; /* Garante que, em telas menores, os cards se ajustem */
-        }
         .gift-card {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 5px rgba(0,0,0,0.1);
-            width: 48%; /* Deixando 2 cards lado a lado */
+            width: 48%;
         }
         .gift-card h4 {
             font-weight: bold;
@@ -87,17 +79,24 @@
         .gift-card p {
             margin-top: 5px;
             font-weight: normal;
-            color: #555; /* Cor de cinza para a instituição de ensino */
+            color: #555;
         }
         .gift-card .course {
             font-weight: bold;
         }
         .gift-card .institution {
-            color: #777; /* Tom de cinza mais suave para a instituição de ensino */
+            color: #777;
         }
         .gift-card .conclusion {
             font-weight: normal;
             color: #333;
+        }
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 20px;
+            flex-wrap: wrap;
         }
         .social-buttons {
             display: flex;
@@ -115,64 +114,4 @@
             transition: background-color 0.3s ease;
         }
         .social-buttons a:hover {
-            background-color: #000070;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <div class="container">
-        <h2 class="logo">Biel Sueira</h2>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="formacao.html" class="active">Formação Acadêmica</a>
-            <a href="contatos.html">Contatos</a>
-        </nav>
-    </div>
-</header>
-
-<main>
-    <h3 class="titulo">Formação Acadêmica</h3>
-
-    <!-- Graduação -->
-    <div class="subtitulo">Graduação:</div>
-    <div class="cards-container">
-        <div class="gift-card">
-            <h4 class="course">Gestão Financeira</h4>
-            <p class="institution">Centro Universitário das Américas</p>
-            <p class="conclusion">Conclusão: Dezembro de 2019</p>
-        </div>
-        <div class="gift-card">
-            <h4 class="course">Bacharelado em Administração</h4>
-            <p class="institution">Universidade Virtual do Estado de São Paulo</p>
-            <p class="conclusion">Previsão de Conclusão: Junho 2027</p>
-        </div>
-    </div>
-
-    <!-- Pós-Graduação -->
-    <div class="subtitulo">Pós-Graduação:</div>
-    <div class="cards-container">
-        <div class="gift-card">
-            <h4 class="course">MBA em Finanças com Ênfase em Mercado de Capitais</h4>
-            <p class="institution">Faculdade Descomplica</p>
-            <p class="conclusion">Conclusão: Junho de 2022</p>
-        </div>
-        <div class="gift-card">
-            <h4 class="course">MBA em Planejamento Financeiro: Economia, Investimentos e Proteção</h4>
-            <p class="institution">Faculdade Brasileira de Tributação</p>
-            <p class="conclusion">Conclusão: Junho de 2024</p>
-        </div>
-    </div>
-
-    <!-- Botões das Redes Sociais -->
-    <div class="social-buttons">
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank">LinkedIn</a>
-        <a href="https://github.com/joohbiel" target="_blank">GitHub</a>
-        <a href="https://www.kaggle.com/joogabrielsueira" target="_blank">Kaggle</a>
-    </div>
-
-</main>
-
-</body>
-</html>
+            background-color: #
