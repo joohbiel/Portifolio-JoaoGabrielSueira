@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formação Acadêmica - Biel Sueira</title>
+    <title>Contatos - Biel Sueira</title>
     <link rel="stylesheet" href="style/main.css">
     <style>
         body {
-            background-color: #D3D3D3;
+            background-color: #F1F1F1;
             font-family: 'Georgia', serif;
             margin: 0;
         }
@@ -15,7 +15,7 @@
             background-color: #00008B;
             padding: 10px 0;
             color: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .container {
             max-width: 1100px;
@@ -39,7 +39,6 @@
             padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            opacity: 0.9;
         }
         nav a:hover {
             background-color: #4B72A2;
@@ -48,29 +47,6 @@
         nav a.active {
             background-color: #3A5D84;
             opacity: 1;
-        }
-        .social-icons {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            gap: 15px;
-        }
-        .social-icons a {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #00008B;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 24px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            background-color: #000070;
         }
         main {
             max-width: 800px;
@@ -84,32 +60,67 @@
             margin-bottom: 20px;
             font-weight: bold;
         }
-        .subtitulo {
-            font-size: 24px;
-            margin: 20px 0 10px;
-            font-weight: bold;
-            color: #00008B;
+        .descricao {
+            font-size: 20px;
+            line-height: 1.6;
         }
-        .cards-container {
+        .formulario {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+        .formulario label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .formulario input, .formulario textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .formulario textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        .botao-form {
+            background-color: #00008B;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        .botao-form:hover {
+            background-color: #000070;
+        }
+
+        /* Botões das redes sociais */
+        .social-buttons {
             display: flex;
+            justify-content: center;
             gap: 20px;
-            justify-content: space-between;
-            margin-top: 20px;
-            flex-wrap: wrap; /* Garante que, em telas menores, os cards se ajustem */
+            margin-top: 30px;
         }
-        .gift-card {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-            width: 48%; /* Deixando 2 cards lado a lado */
-        }
-        .gift-card h4 {
+        .social-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #00008B;
+            color: white;
             font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-        .gift-card p {
-            margin-top: 5px;
-            font-weight: normal;
+        .social-buttons a:hover {
+            background-color: #000070;
         }
     </style>
 </head>
@@ -120,55 +131,41 @@
         <h2 class="logo">Biel Sueira</h2>
         <nav>
             <a href="index.html">Início</a>
-            <a href="formacao.html" class="active">Formação Acadêmica</a>
-            <a href="contatos.html">Contatos</a>
+            <a href="formacao.html">Formação Acadêmica</a>
+            <a href="contatos.html" class="active">Contatos</a>
         </nav>
     </div>
 </header>
 
 <main>
-    <h3 class="titulo">Formação Acadêmica</h3>
+    <h3 class="titulo">Contatos</h3>
 
-    <!-- Graduação -->
-    <div class="subtitulo">Graduação:</div>
-    <div class="cards-container">
-        <div class="gift-card">
-            <h4>Gestão Financeira</h4>
-            <p>Centro Universitário das Américas – Conclusão: Dezembro de 2019</p>
-        </div>
-        <div class="gift-card">
-            <h4>Bacharelado em Administração</h4>
-            <p>Universidade Virtual do Estado de São Paulo – Previsão de formação: Junho de 2027</p>
-        </div>
+    <div class="formulario">
+        <h4>Envie sua mensagem</h4>
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+
+            <button type="submit" class="botao-form">Enviar</button>
+        </form>
     </div>
 
-    <!-- Pós-Graduação -->
-    <div class="subtitulo">Pós-Graduação:</div>
-    <div class="cards-container">
-        <div class="gift-card">
-            <h4>MBA em Finanças com Ênfase em Mercado de Capitais</h4>
-            <p>Faculdade Descomplica – Conclusão: Junho de 2022</p>
-        </div>
-        <div class="gift-card">
-            <h4>MBA em Planejamento Financeiro: Economia, Investimentos e Proteção</h4>
-            <p>Faculdade Brasileira de Tributação – Conclusão: Junho de 2024</p>
-        </div>
+    <!-- Botões de redes sociais -->
+    <div class="social-buttons">
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank">LinkedIn</a>
+        <a href="https://github.com/joohbiel" target="_blank">GitHub</a>
+        <a href="https://www.kaggle.com/joogabrielsueira" target="_blank">Kaggle</a>
     </div>
 </main>
-
-<div class="social-icons">
-    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank">
-        <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/joohbiel" target="_blank">
-        <i class="fab fa-github"></i>
-    </a>
-    <a href="https://www.kaggle.com/joogabrielsueira" target="_blank">
-        <i class="fab fa-kaggle"></i>
-    </a>
-</div>
-
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 
 </body>
 </html>
