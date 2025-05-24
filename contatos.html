@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/responsive.css">
-    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
     <title>Contatos - Biel Sueira</title>
+    <link rel="stylesheet" href="style/main.css">
     <style>
         body {
             background-color: #D3D3D3;
-            font-family: 'Georgia', serif; /* Garantindo a fonte Georgia em todo o corpo */
+            font-family: 'Georgia', serif;
             margin: 0;
         }
         header {
             background-color: #00008B;
-            padding: 10px 0; /* Faixa azul menor */
+            padding: 10px 0;
             color: white;
         }
         .container {
@@ -40,10 +37,39 @@
             font-weight: bold;
             padding: 10px 15px;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
+            opacity: 0.9;
         }
-        nav a:hover, nav a.active {
-            background-color: white;
-            color: #00008B;
+        nav a:hover {
+            background-color: #4B72A2;
+            color: white;
+        }
+        nav a.active {
+            background-color: #3A5D84;
+            opacity: 1;
+        }
+        .social-icons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #00008B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            background-color: #000070;
         }
         main {
             max-width: 800px;
@@ -53,67 +79,30 @@
         }
         .titulo {
             text-align: center;
+            font-size: 36px;
             margin-bottom: 20px;
-            font-size: 36px; /* Aumentando o tamanho do título "Contatos" */
             font-weight: bold;
         }
-        .descricao {
-            line-height: 1.6;
-        }
         .formulario {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin-bottom: 100px; /* Aumentando o espaçamento entre o formulário e os botões */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px 0;
         }
         .formulario input, .formulario textarea {
-            width: 100%;
             padding: 10px;
-            margin: 10px 0;
+            font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 16px;
-        }
-        .formulario textarea {
-            resize: vertical;
-            height: 150px;
-        }
-        .formulario label {
-            font-weight: bold; /* Deixando os rótulos em negrito */
-        }
-        .botao-form {
-            background-color: #00008B;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
             width: 100%;
         }
-        .botao-form:hover {
-            background-color: #000070;
-        }
-        .contatos-footer {
-            display: flex;
-            justify-content: flex-end;
-            gap: 20px;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-        }
-        .contatos-footer a {
+        .formulario button {
+            padding: 10px;
             background-color: #00008B;
-            padding: 15px;
-            border-radius: 50%;
             color: white;
-            text-decoration: none;
-            font-size: 24px;
-        }
-        .contatos-footer a:hover {
-            background-color: #000070;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -131,39 +120,30 @@
 </header>
 
 <main>
-    <h3 class="titulo">Contatos</h3>
+    <h3 class="titulo">Contato</h3>
 
-    <div class="formulario">
-        <h4>Envie sua mensagem</h4>
-        <form action="#" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
-
-            <button type="submit" class="botao-form">Enviar</button>
-        </form>
-    </div>
+    <form action="#" method="POST" class="formulario">
+        <input type="text" name="nome" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu E-mail" required>
+        <input type="tel" name="telefone" placeholder="Seu Telefone" required>
+        <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
 </main>
 
-<!-- Links de redes sociais com os ícones do Font Awesome -->
-<div class="contatos-footer">
-    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank" title="LinkedIn">
+<div class="social-icons">
+    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank">
         <i class="fab fa-linkedin"></i>
     </a>
-    <a href="https://github.com/joohbiel" target="_blank" title="GitHub">
+    <a href="https://github.com/joohbiel" target="_blank">
         <i class="fab fa-github"></i>
     </a>
-    <a href="https://www.kaggle.com/joogabrielsueira" target="_blank" title="Kaggle">
+    <a href="https://www.kaggle.com/joogabrielsueira" target="_blank">
         <i class="fab fa-kaggle"></i>
     </a>
 </div>
 
-<script src="https://kit.f
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+
+</body>
+</html>
