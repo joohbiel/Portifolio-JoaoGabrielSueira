@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos - Biel Sueira</title>
+    <title>Formação Acadêmica - Biel Sueira</title>
     <link rel="stylesheet" href="style/main.css">
     <style>
         body {
@@ -15,6 +15,7 @@
             background-color: #00008B;
             padding: 10px 0;
             color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         .container {
             max-width: 1100px;
@@ -83,26 +84,32 @@
             margin-bottom: 20px;
             font-weight: bold;
         }
-        .formulario {
+        .subtitulo {
+            font-size: 24px;
+            margin: 20px 0 10px;
+            font-weight: bold;
+            color: #00008B;
+        }
+        .cards-container {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin: 20px 0;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 20px;
+            flex-wrap: wrap; /* Garante que, em telas menores, os cards se ajustem */
         }
-        .formulario input, .formulario textarea {
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
+        .gift-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            width: 48%; /* Deixando 2 cards lado a lado */
         }
-        .formulario button {
-            padding: 10px;
-            background-color: #00008B;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
+        .gift-card h4 {
+            font-weight: bold;
+        }
+        .gift-card p {
+            margin-top: 5px;
+            font-weight: normal;
         }
     </style>
 </head>
@@ -113,22 +120,40 @@
         <h2 class="logo">Biel Sueira</h2>
         <nav>
             <a href="index.html">Início</a>
-            <a href="formacao.html">Formação Acadêmica</a>
-            <a href="contatos.html" class="active">Contatos</a>
+            <a href="formacao.html" class="active">Formação Acadêmica</a>
+            <a href="contatos.html">Contatos</a>
         </nav>
     </div>
 </header>
 
 <main>
-    <h3 class="titulo">Contato</h3>
+    <h3 class="titulo">Formação Acadêmica</h3>
 
-    <form action="#" method="POST" class="formulario">
-        <input type="text" name="nome" placeholder="Seu Nome" required>
-        <input type="email" name="email" placeholder="Seu E-mail" required>
-        <input type="tel" name="telefone" placeholder="Seu Telefone" required>
-        <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
+    <!-- Graduação -->
+    <div class="subtitulo">Graduação:</div>
+    <div class="cards-container">
+        <div class="gift-card">
+            <h4>Gestão Financeira</h4>
+            <p>Centro Universitário das Américas – Conclusão: Dezembro de 2019</p>
+        </div>
+        <div class="gift-card">
+            <h4>Bacharelado em Administração</h4>
+            <p>Universidade Virtual do Estado de São Paulo – Previsão de formação: Junho de 2027</p>
+        </div>
+    </div>
+
+    <!-- Pós-Graduação -->
+    <div class="subtitulo">Pós-Graduação:</div>
+    <div class="cards-container">
+        <div class="gift-card">
+            <h4>MBA em Finanças com Ênfase em Mercado de Capitais</h4>
+            <p>Faculdade Descomplica – Conclusão: Junho de 2022</p>
+        </div>
+        <div class="gift-card">
+            <h4>MBA em Planejamento Financeiro: Economia, Investimentos e Proteção</h4>
+            <p>Faculdade Brasileira de Tributação – Conclusão: Junho de 2024</p>
+        </div>
+    </div>
 </main>
 
 <div class="social-icons">
