@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/main.css">
     <style>
         body {
-            background-color: #D3D3D3;
+            background-color: #F1F1F1;
             font-family: 'Georgia', serif;
             margin: 0;
         }
@@ -15,6 +15,7 @@
             background-color: #00008B;
             padding: 10px 0;
             color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .container {
             max-width: 1100px;
@@ -38,7 +39,6 @@
             padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            opacity: 0.9;
         }
         nav a:hover {
             background-color: #4B72A2;
@@ -47,29 +47,6 @@
         nav a.active {
             background-color: #3A5D84;
             opacity: 1;
-        }
-        .social-icons {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            gap: 15px;
-        }
-        .social-icons a {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #00008B;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 24px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            background-color: #000070;
         }
         main {
             max-width: 800px;
@@ -84,7 +61,26 @@
             font-weight: bold;
         }
         .descricao {
+            font-size: 20px;
             line-height: 1.6;
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .social-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #00008B;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .social-buttons a:hover {
+            background-color: #000070;
         }
     </style>
 </head>
@@ -103,7 +99,7 @@
 
 <main>
     <h3 class="titulo">Sobre Mim</h3>
-    <p class="descricao">Oi! Sou João Gabriel Suiera! Sou um profissional com sólida experiência em finanças, riscos e gestão, tendo atuado em grandes instituições como Votorantim e Itaú. Após anos contribuindo com a análise estratégica, gestão e negócios estou em transição de carreira para a área de tecnologia com foco em análise de dados. Atualmente, atuo fortemente com Power BI, desenvolvendo dashboards complexos para a tomada de decisões na área de riscos do Santander.</p>
+    <p class="descricao">Oi! Sou João Gabriel Sueira! Sou um profissional com sólida experiência em finanças, riscos e gestão, tendo atuado em grandes instituições como Votorantim e Itaú. Após anos contribuindo com a análise estratégica, gestão e negócios estou em transição de carreira para a área de tecnologia com foco em análise de dados. Atualmente, atuo fortemente com Power BI, desenvolvendo dashboards complexos para a tomada de decisões na área de riscos do Santander.</p>
     <p class="descricao">Estou focado no desenvolvimento contínuo das minhas habilidades em:</p>
     <ul class="descricao">
         <li>📊 Análise de Dados com Python, SQL e Excel avançado</li>
@@ -111,21 +107,14 @@
         <li>📚 Modelagem de Dados, estatística aplicada e fundamentos de Machine Learning</li>
     </ul>
     <p class="descricao">Meu objetivo é unir minha bagagem em negócios com ferramentas modernas de Business Intelligence, atuando como Analista de BI para gerar insights e apoiar a tomada de decisões baseadas em dados.</p>
+
+    <!-- Botões de redes sociais -->
+    <div class="social-buttons">
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank">LinkedIn</a>
+        <a href="https://github.com/joohbiel" target="_blank">GitHub</a>
+        <a href="https://www.kaggle.com/joogabrielsueira" target="_blank">Kaggle</a>
+    </div>
 </main>
-
-<div class="social-icons">
-    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank">
-        <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/joohbiel" target="_blank">
-        <i class="fab fa-github"></i>
-    </a>
-    <a href="https://www.kaggle.com/joogabrielsueira" target="_blank">
-        <i class="fab fa-kaggle"></i>
-    </a>
-</div>
-
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 
 </body>
 </html>
