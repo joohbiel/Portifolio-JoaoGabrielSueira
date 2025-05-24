@@ -49,29 +49,6 @@
             background-color: #3A5D84;
             opacity: 1;
         }
-        .social-icons {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            gap: 15px;
-        }
-        .social-icons a {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #00008B;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 24px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            background-color: #000070;
-        }
         main {
             max-width: 800px;
             margin: 40px auto;
@@ -95,15 +72,14 @@
             gap: 20px;
             justify-content: space-between;
             margin-top: 20px;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* Garante que, em telas menores, os cards se ajustem */
         }
         .gift-card {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 5px rgba(0,0,0,0.1);
-            width: 100%;
-            max-width: 45%;
+            width: 48%; /* Deixando 2 cards lado a lado */
         }
         .gift-card h4 {
             font-weight: bold;
@@ -111,6 +87,35 @@
         .gift-card p {
             margin-top: 5px;
             font-weight: normal;
+            color: #555; /* Cor de cinza para a instituição de ensino */
+        }
+        .gift-card .course {
+            font-weight: bold;
+        }
+        .gift-card .institution {
+            color: #777; /* Tom de cinza mais suave para a instituição de ensino */
+        }
+        .gift-card .conclusion {
+            font-weight: normal;
+            color: #333;
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .social-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #00008B;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .social-buttons a:hover {
+            background-color: #000070;
         }
     </style>
 </head>
@@ -134,12 +139,14 @@
     <div class="subtitulo">Graduação:</div>
     <div class="cards-container">
         <div class="gift-card">
-            <h4>Gestão Financeira</h4>
-            <p>Centro Universitário das Américas – Conclusão: Dezembro de 2019</p>
+            <h4 class="course">Gestão Financeira</h4>
+            <p class="institution">Centro Universitário das Américas</p>
+            <p class="conclusion">Conclusão: Dezembro de 2019</p>
         </div>
         <div class="gift-card">
-            <h4>Bacharelado em Administração</h4>
-            <p>Universidade Virtual do Estado de São Paulo – Previsão de formação: Junho de 2027</p>
+            <h4 class="course">Bacharelado em Administração</h4>
+            <p class="institution">Universidade Virtual do Estado de São Paulo</p>
+            <p class="conclusion">Previsão de Conclusão: Junho 2027</p>
         </div>
     </div>
 
@@ -147,29 +154,25 @@
     <div class="subtitulo">Pós-Graduação:</div>
     <div class="cards-container">
         <div class="gift-card">
-            <h4>MBA em Finanças com Ênfase em Mercado de Capitais</h4>
-            <p>Faculdade Descomplica – Conclusão: Junho de 2022</p>
+            <h4 class="course">MBA em Finanças com Ênfase em Mercado de Capitais</h4>
+            <p class="institution">Faculdade Descomplica</p>
+            <p class="conclusion">Conclusão: Junho de 2022</p>
         </div>
         <div class="gift-card">
-            <h4>MBA em Planejamento Financeiro: Economia, Investimentos e Proteção</h4>
-            <p>Faculdade Brasileira de Tributação – Conclusão: Junho de 2024</p>
+            <h4 class="course">MBA em Planejamento Financeiro: Economia, Investimentos e Proteção</h4>
+            <p class="institution">Faculdade Brasileira de Tributação</p>
+            <p class="conclusion">Conclusão: Junho de 2024</p>
         </div>
     </div>
+
+    <!-- Botões das Redes Sociais -->
+    <div class="social-buttons">
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank">LinkedIn</a>
+        <a href="https://github.com/joohbiel" target="_blank">GitHub</a>
+        <a href="https://www.kaggle.com/joogabrielsueira" target="_blank">Kaggle</a>
+    </div>
+
 </main>
-
-<div class="social-icons">
-    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank">
-        <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/joohbiel" target="_blank">
-        <i class="fab fa-github"></i>
-    </a>
-    <a href="https://www.kaggle.com/joogabrielsueira" target="_blank">
-        <i class="fab fa-kaggle"></i>
-    </a>
-</div>
-
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 
 </body>
 </html>
