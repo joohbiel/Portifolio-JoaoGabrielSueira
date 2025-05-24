@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formação Acadêmica - Biel Sueira</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <link rel="stylesheet" href="style/responsive.css" />
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: #DCDCDC;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    header {
+      background-color: #20B2AA;
+      padding: 20px 0;
+      color: white;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 15px;
+      color: #333;
+    }
+    h2, h3 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .box-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .box {
+      background-color: white;
+      padding: 20px;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: #333;
+    }
+    .box h4 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #20B2AA;
+    }
+    .contatos-footer {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    .botao {
+      background-color: #20B2AA;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .botao:hover {
+      background-color: #1e908a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h2 class="logo">Biel Sueira</h2>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="formacao.html">Formação Acadêmica</a>
+        <a href="#contatos">Contatos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Formação</h2>
+    <div class="box-container">
+      <div class="box">
+        <h4>Graduação</h4>
+        <p><strong>Tecnólogo em Gestão Financeira</strong><br />
+          Centro Universitário das Américas<br />
+          Conclusão Dezembro de 2019</p>
+      </div>
+      <div class="box">
+        <h4>Graduação</h4>
+        <p><strong>Administração</strong><br />
+          Universidade Virtual de São Paulo<br />
+          Previsão de conclusão Junho de 2027</p>
+      </div>
+    </div>
+
+    <h2>Pós-Graduação</h2>
+    <div class="box-container">
+      <div class="box">
+        <h4>MBA em Finanças com ênfase em Mercado de Capitais</h4>
+        <p>Faculdade Descomplica<br />
+        Conclusão em Julho de 2022</p>
+      </div>
+      <div class="box">
+        <h4>MBA em Economia, Investimentos e proteção "EPI"</h4>
+        <p>Faculdade Brasileira de Tributação em parceria com Edgar de Abreu.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="contatos-footer" id="contatos">
+    <a href="https://br.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank">
+      <button role="button" class="botao">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </button>
+    </a>
+    <a href="https://www.kaggle.com/code/joogabrielsueira/analise-30-mil-musicas-do-spotify" target="_blank">
+      <button role="button" class="botao">
+        <i class="fab fa-kaggle"></i> Kaggle
+      </button>
+    </a>
+    <a href="mailto:seuemail@exemplo.com">
+      <button role="button" class="botao">
+        <i class="fas fa-envelope"></i> E-mail
+      </button>
+    </a>
+  </div>
+</body>
+</html>
