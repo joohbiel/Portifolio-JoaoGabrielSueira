@@ -9,15 +9,17 @@
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   <style>
   body {
-    background-color: #C0C0C0;
+    background-color: #D3D3D3; /* cinza mais claro */
     font-family: Arial, sans-serif;
     margin: 0;
   }
+
   header {
-    background-color: #00008B;
+    background-color: #00008B; /* azul escuro */
     padding: 20px 0;
     color: white;
   }
+
   .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -26,49 +28,87 @@
     align-items: center;
     padding: 0 15px;
   }
+
   .logo {
     font-size: 24px;
     font-weight: bold;
   }
+
   nav a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
   }
+
   nav a:hover {
     text-decoration: underline;
   }
+
   main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
     padding: 0 15px;
     color: #333;
   }
-  .titulo {
+
+  h2, h3 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
-  .descricao {
-    line-height: 1.6;
+
+  .box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
   }
-  .botoes {
-    text-align: center;
-    margin-top: 40px;
+
+  .box {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #333;
   }
+
+  .box h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #00008B;
+  }
+
   .botao {
     background-color: #00008B;
     border: none;
     color: white;
-    padding: 10px 20px;
-    margin: 0 10px;
+    padding: 10px 15px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+
   .botao:hover {
     background-color: #000070;
+  }
+
+  .botoes,
+  .contatos-footer {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .contatos-footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
   }
 </style>
 </head>
