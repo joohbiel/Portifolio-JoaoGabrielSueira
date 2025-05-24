@@ -1,159 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfólio Biel Sueira</title>
-  <link rel="stylesheet" href="style/main.css" />
-  <link rel="stylesheet" href="style/responsive.css" />
-  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-  <style>
-  body {
-    background-color: #D3D3D3; /* cinza mais claro */
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-
-  header {
-    background-color: #00008B; /* azul escuro */
-    padding: 20px 0;
-    color: white;
-  }
-
-  .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
-  }
-
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
-  }
-
-  main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 15px;
-    color: #333;
-  }
-
-  h2, h3 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .box-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-  }
-
-  .box {
-    background-color: white;
-    padding: 20px;
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    color: #333;
-  }
-
-  .box h4 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: #00008B;
-  }
-
-  .botao {
-    background-color: #00008B;
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .botao:hover {
-    background-color: #000070;
-  }
-
-  .botoes,
-  .contatos-footer {
-    text-align: center;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  .contatos-footer {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Biel Sueira</title>
+    <link rel="stylesheet" href="style/main.css">
+    <style>
+        body {
+            background-color: #D3D3D3;
+            font-family: Arial, sans-serif; /* Fonte para o conteúdo */
+            margin: 0;
+        }
+        header {
+            background-color: #00008B;
+            padding: 10px 0; /* Faixa azul menor */
+            color: white;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+        }
+        .logo {
+            font-family: 'Georgia', serif; /* Fonte para o nome "Biel Sueira" */
+            font-size: 36px; /* Aumentei um pouco o tamanho */
+            font-weight: bold;
+            color: white;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav a:hover, nav a.active {
+            background-color: white;
+            color: #00008B;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 15px;
+            color: #333;
+        }
+        .titulo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .descricao {
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-  <header>
+
+<header>
     <div class="container">
-      <h2 class="logo">Biel Sueira</h2>
-      <nav>
-        <a href="index.html">Início</a>
-        <a href="formacao.html">Formação Acadêmica</a>
-        <a href="#contatos">Contatos</a>
-      </nav>
+        <h2 class="logo">Biel Sueira</h2>
+        <nav>
+            <a href="index.html" class="active">Início</a>
+            <a href="formacao.html">Formação Acadêmica</a>
+            <a href="contatos.html">Contatos</a>
+        </nav>
     </div>
-  </header>
+</header>
 
-  <main>
+<main>
     <h3 class="titulo">Sobre Mim</h3>
-    <p class="descricao">
-      Oi! Sou João Gabriel Sueira!<br />
-      Sou um profissional com sólida experiência em finanças, riscos e gestão, tendo atuado em grandes instituições como Votorantim e Itaú. Após anos contribuindo com a análise estratégica, gestão e negócios, estou em transição de carreira para a área de tecnologia com foco em análise de dados. Atualmente, atuo fortemente com Power BI, desenvolvendo dashboards complexos para a tomada de decisões na área de riscos do Santander.<br /><br />
-      Estou focado no desenvolvimento contínuo das minhas habilidades em:<br />
-      📊 Análise de Dados com Python, SQL e Excel avançado<br />
-      📈 Visualização de Dados com Power BI e Tableau<br />
-      📚 Modelagem de Dados, estatística aplicada e fundamentos de Machine Learning<br /><br />
-      Meu objetivo é unir minha bagagem em negócios com ferramentas modernas de Business Intelligence, atuando como Analista de BI para gerar insights e apoiar a tomada de decisões baseadas em dados.<br />
-      Estou construindo projetos práticos utilizando Python, SQL e Power BI, e sigo aprendendo constantemente para me tornar um Analista de BI completo. Se você também acredita no poder dos dados para transformar decisões e negócios, vamos conversar!
-    </p>
+    <p class="descricao">Oi! Sou João Gabriel Suiera! Sou um profissional com sólida experiência em finanças, riscos e gestão, tendo atuado em grandes instituições como Votorantim e Itaú. Após anos contribuindo com a análise estratégica, gestão e negócios estou em transição de carreira para a área de tecnologia com foco em análise de dados. Atualmente, atuo fortemente com Power BI, desenvolvendo dashboards complexos para a tomada de decisões na área de riscos do Santander.</p>
+    <p class="descricao">Estou focado no desenvolvimento contínuo das minhas habilidades em:</p>
+    <ul class="descricao">
+        <li>📊 Análise de Dados com Python, SQL e Excel avançado</li>
+        <li>📈 Visualização de Dados com Power BI e Tableau</li>
+        <li>📚 Modelagem de Dados, estatística aplicada e fundamentos de Machine Learning</li>
+    </ul>
+    <p class="descricao">Meu objetivo é unir minha bagagem em negócios com ferramentas modernas de Business Intelligence, atuando como Analista de BI para gerar insights e apoiar a tomada de decisões baseadas em dados.</p>
+</main>
 
-    <div class="botoes" id="contatos">
-      <a href="https://br.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank">
-        <button role="button" class="botao">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </button>
-      </a>
-      <a href="https://www.kaggle.com/joogabrielsueira" target="_blank">
-        <button role="button" class="botao">
-          <i class="fab fa-kaggle"></i> Kaggle
-        </button>
-      </a>
-      <a href="mailto:seuemail@exemplo.com">
-        <button role="button" class="botao">
-          <i class="fas fa-envelope"></i> E-mail
-        </button>
-      </a>
-    </div>
-  </main>
 </body>
 </html>
