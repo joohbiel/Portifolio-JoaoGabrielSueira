@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: #D3D3D3;
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif; /* Fonte Georgia para o conteúdo */
             margin: 0;
         }
         header {
@@ -25,7 +25,6 @@
             padding: 0 15px;
         }
         .logo {
-            font-family: 'Georgia', serif;
             font-size: 36px;
             font-weight: bold;
             color: white;
@@ -37,10 +36,12 @@
             font-weight: bold;
             padding: 10px 15px;
             border-radius: 5px;
+            transition: background-color 0.3s, border 0.3s;
         }
-        nav a:hover, nav a.active {
+        nav a:hover {
             background-color: white;
             color: #00008B;
+            border: 2px solid #00008B;
         }
         main {
             max-width: 800px;
@@ -55,8 +56,15 @@
         .descricao {
             line-height: 1.6;
         }
-        .formacao {
-            margin-bottom: 30px;
+        .formacao-container {
+            margin-top: 30px;
+        }
+        .formacao-box {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
     </style>
 </head>
@@ -76,18 +84,22 @@
 <main>
     <h3 class="titulo">Formação Acadêmica</h3>
 
-    <div class="formacao">
-        <h4>Graduação</h4>
-        <p><strong>Tecnólogo em Gestão Financeira</strong> - Centro Universitário das Américas, Conclusão: Dezembro 2019</p>
-        <p><strong>Administração</strong> - Universidade Virtual de São Paulo, Previsão de Conclusão: Junho 2027</p>
+    <div class="formacao-container">
+        <div class="formacao-box">
+            <h4>Graduação</h4>
+            <p><strong>Tecnólogo em Gestão Financeira</strong> - Centro Universitário das Américas <br>
+            Conclusão: Dezembro de 2019</p>
+            <p><strong>Administração</strong> - Universidade Virtual de São Paulo <br>
+            Previsão de Conclusão: Junho de 2027</p>
+        </div>
+        
+        <div class="formacao-box">
+            <h4>Pós-Graduações</h4>
+            <p><strong>MBA em Finanças com ênfase em Mercado de Capitais</strong> - Faculdade Descomplica <br>
+            Conclusão: Julho de 2022</p>
+            <p><strong>MBA em Economia, Investimentos e Proteção (EPI)</strong> - Faculdade Brasileira de Tributação em parceria com Edgar de Abreu</p>
+        </div>
     </div>
-
-    <div class="formacao">
-        <h4>Pós Graduações</h4>
-        <p><strong>MBA em Finanças com ênfase em Mercado de Capitais</strong> - Faculdade Descomplica, Conclusão: Julho 2022</p>
-        <p><strong>MBA em Economia, Investimentos e Proteção "EPI"</strong> - Faculdade Brasileira de Tributação, Parceria com Edgar de Abreu</p>
-    </div>
-
 </main>
 
 </body>
