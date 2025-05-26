@@ -16,8 +16,6 @@ O site possui um design clean, responsivo e fácil de navegar, com foco em usabi
 
 - **HTML5**: Estrutura semântica do site.
 - **CSS3**: Estilos embutidos e arquivo externo para layout, cores, tipografia e responsividade.
-- **Flexbox**: Layout flexível para containers e cartões de formação.
-- **Formulário HTML**: Validação básica via atributos `required`.
 
 **Acesse o Projeto**
 
