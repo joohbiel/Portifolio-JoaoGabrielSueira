@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfólio Biel Sueira</title>
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/main.css" />
     <style>
         body {
             background-color: #F1F1F1;
@@ -45,8 +45,8 @@
             color: white;
         }
         nav a.active {
-    background-color: transparent;
-    box-shadow: inset 0 0 0 2px rgba(255,255,255,0.2);
+            background-color: transparent;
+            box-shadow: inset 0 0 0 2px rgba(255,255,255,0.2);
         }
         main {
             max-width: 800px;
@@ -64,13 +64,19 @@
             font-size: 20px;
             line-height: 1.6;
         }
+        .descricao ul {
+            padding-left: 20px;
+        }
+
+        /* Social Buttons */
         .social-buttons {
             display: flex;
             justify-content: center;
             gap: 15px;
             margin-top: 30px;
         }
-        .social-buttons a {
+        /* Link geral dos botões sociais que são texto */
+        .social-buttons a:not(.linkedin-icon) {
             text-decoration: none;
             padding: 10px 20px;
             background-color: #00008B;
@@ -79,8 +85,37 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-        .social-buttons a:hover {
+        .social-buttons a:not(.linkedin-icon):hover {
             background-color: #000070;
+        }
+
+        /* Link do LinkedIn com ícone redondo igual menu */
+        .social-buttons a.linkedin-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: none;
+        }
+        .social-buttons a.linkedin-icon:hover {
+            background-color: #4B72A2;
+        }
+        .social-buttons a.linkedin-icon.active {
+            background-color: transparent;
+            box-shadow: inset 0 0 0 2px rgba(255,255,255,0.2);
+        }
+        .social-buttons a.linkedin-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: white;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -102,15 +137,19 @@
     <p class="descricao">Oi! Sou João Gabriel Sueira! Sou um profissional com sólida experiência em finanças, riscos e gestão, tendo atuado em grandes instituições como Votorantim e Itaú. Após anos contribuindo com a análise estratégica, gestão e negócios estou em transição de carreira para a área de tecnologia com foco em análise de dados. Atualmente, atuo fortemente com Power BI, desenvolvendo dashboards complexos para a tomada de decisões na área de riscos do Santander.</p>
     <p class="descricao">Estou focado no desenvolvimento contínuo das minhas habilidades em:</p>
     <ul class="descricao">
-        <li> Análise de Dados com Python, SQL e Excel avançado</li>
-        <li> Visualização de Dados com Power BI e Tableau</li>
-        <li> Modelagem de Dados, estatística aplicada e fundamentos de Machine Learning</li>
+        <li>Análise de Dados com Python, SQL e Excel avançado</li>
+        <li>Visualização de Dados com Power BI e Tableau</li>
+        <li>Modelagem de Dados, estatística aplicada e fundamentos de Machine Learning</li>
     </ul>
     <p class="descricao">Meu objetivo é unir minha bagagem em negócios com ferramentas modernas de Business Intelligence, atuando como Analista de BI para gerar insights e apoiar a tomada de decisões baseadas em dados.</p>
 
     <!-- Botões de redes sociais -->
     <div class="social-buttons">
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank" class="linkedin-icon active" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+                <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+            </svg>
+        </a>
         <a href="https://github.com/joohbiel" target="_blank">GitHub</a>
         <a href="https://www.kaggle.com/joogabrielsueira" target="_blank">Kaggle</a>
     </div>
