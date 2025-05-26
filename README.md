@@ -1,8 +1,8 @@
-# *Portfólio João Gabriel Sueira*
+# Portfólio João Gabriel Sueira
 
 Este repositório contém o código-fonte para meu portfólio pessoal, sou um profissional em transição de carreira para análise de dados, possuo experiência em finanças, riscos e gestão.
 
-***Sobre o Projeto***
+**Sobre o Projeto**
 
 Este portfólio é um site estático desenvolvido com HTML e CSS, dividido em três páginas principais:
 
@@ -12,14 +12,14 @@ Este portfólio é um site estático desenvolvido com HTML e CSS, dividido em tr
 
 O site possui um design clean, responsivo e fácil de navegar, com foco em usabilidade e apresentação profissional.
 
-***Tecnologias Utilizadas***
+**Tecnologias Utilizadas**
 
 - **HTML5**: Estrutura semântica do site.
 - **CSS3**: Estilos embutidos e arquivo externo para layout, cores, tipografia e responsividade.
 - **Flexbox**: Layout flexível para containers e cartões de formação.
 - **Formulário HTML**: Validação básica via atributos `required`.
 
-***Acesse o Projeto***
+**Acesse o Projeto**
 
 Confira o site hospedado no GitHub Pages:
 https://joohbiel.github.io/Portifolio-JoaoGabrielSueira/
