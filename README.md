@@ -6,9 +6,9 @@ Este repositório contém o código-fonte para meu portfólio pessoal, sou um pr
 
 Este portfólio é um site estático desenvolvido com HTML e CSS, dividido em três páginas principais:
 
-- **Início (`index.html`)**: Apresentação pessoal, resumo da trajetória profissional e objetivos atuais;
-- **Formação Acadêmica (`formacao.html`)**: Detalhes de todo meu background, apresentado em gift cards;
-- **Contatos (`contatos.html`)**: Formulário simples para envio de mensagens, famoso "fale conosco".
+- **Início**: Apresentação pessoal, resumo da trajetória profissional e objetivos atuais;
+- **Formação Acadêmica**: Detalhes de todo meu background, apresentado em gift cards;
+- **Contatos**: Formulário simples para envio de mensagens, famoso "fale conosco".
 
 O site possui um design clean, responsivo e fácil de navegar, com foco em usabilidade e apresentação profissional.
 
