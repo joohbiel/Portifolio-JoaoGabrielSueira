@@ -1,168 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Portfólio Biel Sueira</title>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>João Gabriel Sueira - Portfólio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
     body {
-        background-color: #F1F1F1;
-        font-family: 'Georgia', serif;
-        margin: 0;
-        position: relative;
-        min-height: 100vh;
-        padding-bottom: 80px; /* Espaço para os botões fixos */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
     }
+
     header {
-        background-color: #00008B;
-        padding: 10px 0;
-        color: white;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: #007bff;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
     }
-    .container {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 15px;
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
     }
-    /* Mantive a logo original do seu arquivo */
-    .logo {
-        font-family: 'Georgia', serif;
-        font-size: 36px;
-        font-weight: bold;
-        color: white;
-        /* qualquer outro estilo original pode ser mantido aqui */
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
     }
-    nav a {
-        color: white;
-        text-decoration: none;
-        margin-left: 20px;
-        font-weight: bold;
-        padding: 10px 15px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-    nav a:hover {
-        background-color: #4B72A2;
-        color: white;
-    }
-    nav a.active {
-        background-color: transparent;
-        box-shadow: inset 0 0 0 2px rgba(255,255,255,0.2);
-    }
+
     main {
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 0 15px;
-        color: #333;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    .titulo {
-        text-align: center;
-        font-size: 36px;
-        margin-bottom: 20px;
-        font-weight: bold;
+
+    section {
+      margin-bottom: 40px;
     }
-    .descricao {
-        font-size: 20px;
-        line-height: 1.6;
+
+    h2 {
+      color: #007bff;
+      font-size: 24px;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
     }
-    .descricao ul {
-        padding-left: 20px;
+
+    ul {
+      list-style: none;
+      padding: 0;
     }
-    /* Container dos botões sociais fixados */
-    .social-buttons {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        display: flex;
-        flex-direction: column; /* empilhar verticalmente */
-        gap: 15px;
-        z-index: 1000;
+
+    ul li {
+      background-color: white;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    /* Botões circulares com ícones SVG */
-    .social-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background-color: transparent;
-        border: 2px solid #00008B;
-        color: #00008B;
-        text-decoration: none;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        box-shadow: none;
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #007bff;
+      color: white;
     }
-    .social-icon svg {
-        width: 22px;
-        height: 22px;
-        fill: #00008B;
-        pointer-events: none;
-        transition: fill 0.3s ease;
+
+    /* Estilo dos botões sociais empilhados */
+    .social-icons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
     }
-    /* Hover: fundo azul, ícone e borda branco */
-    .social-icon:hover {
-        background-color: #00008B;
-        color: white;
-        border-color: #00008B;
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
     }
-    .social-icon:hover svg {
-        fill: white;
+
+    .social-icons a:hover {
+      background-color: #555;
     }
-</style>
+
+    .social-icons a i {
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>João Gabriel Sueira</h1>
+    <p>Profissional em transição para a área de dados</p>
+  </header>
 
-<header>
-    <div class="container">
-        <h2 class="logo">João Gabriel Sueira</h2>
-        <nav>
-            <a href="index.html" class="active">Início</a>
-            <a href="formacao.html">Formação Acadêmica</a>
-            <a href="contatos.html">Contatos</a>
-        </nav>
-    </div>
-</header>
+  <main>
+    <section>
+      <h2>Sobre Mim</h2>
+      <p>Sou um profissional com sólida experiência em finanças, atuando em áreas como planejamento financeiro, crédito e cobrança, e controladoria. Atualmente, estou em transição de carreira para a área de dados, onde busco aplicar minha capacidade analítica e atenção a detalhes para gerar insights e apoiar a tomada de decisões estratégicas.</p>
+    </section>
 
-<main>
-    <h3 class="titulo">Sobre Mim</h3>
-    <p class="descricao">Oi! Sou João Gabriel Sueira! Sou um profissional com sólida experiência em finanças, riscos e gestão, tendo atuado em grandes instituições como Votorantim e Itaú. Após anos contribuindo com a análise estratégica, gestão e negócios estou em transição de carreira para a área de tecnologia com foco em análise de dados. Atualmente, atuo fortemente com Power BI, desenvolvendo dashboards complexos para a tomada de decisões na área de riscos do Santander.</p>
-    <p class="descricao">Estou focado no desenvolvimento contínuo das minhas habilidades em:</p>
-    <ul class="descricao">
-        <li>Análise de Dados com Python, SQL e Excel avançado</li>
-        <li>Visualização de Dados com Power BI e Tableau</li>
-        <li>Modelagem de Dados, estatística aplicada e fundamentos de Machine Learning</li>
-    </ul>
-    <p class="descricao">Meu objetivo é unir minha bagagem em negócios com ferramentas modernas de Business Intelligence, atuando como Analista de BI para gerar insights e apoiar a tomada de decisões baseadas em dados.</p>
-</main>
+    <section>
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Excel Avançado</li>
+        <li>Power BI</li>
+        <li>SQL</li>
+        <li>Python (iniciante)</li>
+        <li>Raciocínio analítico e visão de negócio</li>
+      </ul>
+    </section>
 
-<!-- Botões sociais fixos no canto inferior direito -->
-<div class="social-buttons" aria-label="Redes Sociais">
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
-            <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
-        </svg>
+    <section>
+      <h2>Projetos</h2>
+      <ul>
+        <li><strong>Automatização de relatórios financeiros:</strong> Utilização de Power BI e Excel para criação de dashboards interativos.</li>
+        <li><strong>Análise de crédito:</strong> Desenvolvimento de modelo de análise de perfil de clientes para concessão de crédito.</li>
+        <li><strong>Projeto em andamento:</strong> Estudo de bases de dados públicas com Python e SQL para gerar insights econômicos.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formação</h2>
+      <ul>
+        <li>Pós-graduação em Finanças e Investimentos</li>
+        <li>Pós-graduação em Finanças com Ênfase em Mercado de Capitais</li>
+        <li>Graduação em Gestão Financeira</li>
+        <li>Cursando Administração</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 João Gabriel Sueira</p>
+  </footer>
+
+  <!-- Botões Sociais Empilhados -->
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/joaogabriels/" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
     </a>
-
-    <!-- GitHub -->
-    <a href="https://github.com/joohbiel" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" aria-hidden="true" focusable="false">
-            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.5 15.8-33.9-62-7-127.3-31-127.3-138 0-30.6 10.7-55.6 28.1-75.2-3-7-12.2-35.4 3-73.7 0 0 23-7.4 75.4 28.1 21.9-6.1 45.3-9.1 68.6-9.1s46.6 3 68.6 9.1c52.3-35.5 75.3-28.1 75.3-28.1 15.3 38.3 6.3 66.7 3.3 73.7 17.4 19.6 28.1 44.5 28.1 75.2 0 107.4-65.4 131-127.6 138 9.1 8 17.2 23.9 17.2 48.3 0 34.9-.3 63.1-.3 69.7 0 6.7 4.4 14.7 17.3 12.1C426.2 457.8 496 362.9 496 252 496 113.3 389.9 8 244.8 8z"/>
-        </svg>
+    <a href="https://github.com/joaogabriels" target="_blank">
+      <i class="fab fa-github"></i> GitHub
     </a>
-
-    <!-- Kaggle -->
-    <a href="https://www.kaggle.com/joogabrielsueira" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Kaggle">
-        <!-- Mantive a logo original do seu arquivo para Kaggle -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="#00008B" width="22" height="22">
-            <path d="M9.171 11.758c-1.326 0-2.4 1.048-2.4 2.337 0 1.29 1.074 2.338 2.4 2.338 1.327 0 2.4-1.048 2.4-2.338 0-1.289-1.073-2.337-2.4-2.337zm0 3.793a1.448 1.448 0 1 1 0-2.896 1.448 1.448 0 0 1 0 2.896zm7.499-1.271a5.426 5.426 0 0 1-1.872 2.494c-1.422 1.154-3.334 1.522-4.91 1.237-1.372-.254-2.503-1.122-3.225-2.289a3.485 3.485 0 0 1-.522-2.29 2.715 2.715 0 0 1 .429-1.258 2.214 2.214 0 0 1 1.48-.978 2.2 2.2 0 0 1 1.503.254c.137.08.243.198.309.334a.517.517 0 0 1 .063.324c-.012.18-.04.369-.077.565-.049.271-.128.484-.232.656-.097.154-.25.29-.447.393a.684.684 0 0 1-.382.096c-.218 0-.407-.156-.482-.386a1.17 1.17 0 0 1-.05-.466.252.252 0 0 0-.054-.143.231.231 0 0 0-.159-.067.222.222 0 0 0-.17.056 1.416 1.416 0 0 0-.216.27 2.15 2.15 0 0 0-.17.36c-.069.191-.123.407-.163.646-.07.446-.098.943-.078 1.471.02.519.09.955.209 1.307a3.613 3.613 0 0 0 1.011 1.662 5.082 5.082 0 0 0 2.83 1.403c1.511.233 3.055-.105 4.28-1.09a6.642 6.642 0 0 0 1.28-1.273l1.655 1.059a1.06 1.06 0 0 0 1.382-.341 1.081 1.081 0 0 0-.341-1.527l-3.513-2.25zm-6.858-5.9a1.925 1.925 0 0 1 2.7 0 2.024 2.024 0 0 1 .579 1.421 2.02 2.02 0 0 1-.578 1.421 1.924 1.924 0 0 1-2.7 0 2.02 2.02 0 0 1-.58-1.42c0-.547.206-1.06.58-1.421z"/>
-        </svg>
+    <a href="https://www.kaggle.com/joaogabrielsueira" target="_blank">
+      <i class="fab fa-kaggle"></i> Kaggle
     </a>
-</div>
-
+  </div>
 </body>
 </html>
