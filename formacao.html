@@ -3,47 +3,59 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Página com Navegação e Botões Sociais</title>
-    <link rel="stylesheet" href="style/nav-buttons.css" />
-    <link rel="stylesheet" href="style/social-buttons.css" />
+    <title>Formação</title>
+
+    <!-- Link para os arquivos CSS externos conforme solicitado -->
+    <link rel="stylesheet" href="Fundo-usado.css" />
+    <link rel="stylesheet" href="nav-buttons.css" />
+    <link rel="stylesheet" href="social-buttons.css" />
 </head>
 <body>
     <header>
-        <nav>
-            <span class="logo">MinhaLogo</span>
-            <a href="#" class="active">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Serviços</a>
-            <a href="#">Contato</a>
-        </nav>
+        <div class="container">
+            <div class="logo">Minha Logo</div>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="formacao.html">Formação</a>
+                <a href="contatos.html">Contatos</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Conteúdo principal da página -->
     <main>
-        <h1>Bem-vindo à minha página!</h1>
-        <p>Conteúdo de exemplo aqui.</p>
+        <h1 class="titulo">Minha Formação</h1>
+        <p class="descricao">Aqui você encontra detalhes sobre minha formação acadêmica e cursos realizados.</p>
+
+        <!-- Conteúdo relacionado a gift cards, textos, espaçamento etc. permanece aqui -->
+
+        <!-- Exemplo genérico de conteúdo: -->
+        <section class="cards">
+            <article class="card">
+                <h2>Curso XYZ</h2>
+                <p>Descrição do curso XYZ, datas e detalhes.</p>
+            </article>
+            <article class="card">
+                <h2>Curso ABC</h2>
+                <p>Descrição do curso ABC, detalhes e observações.</p>
+            </article>
+        </section>
     </main>
 
-    <!-- Botões sociais fixos -->
+    <!-- Botões sociais fixos (exemplo com 3 redes) -->
     <div class="social-buttons">
-        <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
-            <!-- Ícone SVG do Facebook -->
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 12a10 10 0 1 0-11.5 9.87v-6.99h-2.2v-2.88h2.2v-2.2c0-2.17 1.29-3.37 3.28-3.37.95 0 1.95.17 1.95.17v2.14h-1.1c-1.08 0-1.42.67-1.42 1.36v1.99h2.42l-.39 2.88h-2.03v6.99A10 10 0 0 0 22 12"/>
-            </svg>
+        <a href="https://facebook.com" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <!-- Ícone SVG Facebook simplificado -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-3v-3h3v-2.3c0-3 1.8-4.6 4.5-4.6 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 1-2 2v2.2h3.4l-.5 3h-2.9v7A10 10 0 0 0 22 12z"/></svg>
         </a>
-        <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter">
-            <!-- Ícone SVG do Twitter -->
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.46 6c-.77.35-1.6.59-2.46.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.3 3.9 12.15 12.15 0 0 1-8.82-4.47 4.28 4.28 0 0 0 1.33 5.71 4.26 4.26 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.43 4.2 4.3 4.3 0 0 1-1.93.07 4.28 4.28 0 0 0 4 3 8.6 8.6 0 0 1-5.33 1.84A8.77 8.77 0 0 1 2 18.14a12.1 12.1 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.39-.01-.58A8.72 8.72 0 0 0 22.46 6z"/>
-            </svg>
+        <a href="https://twitter.com" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+            <!-- Ícone SVG Twitter simplificado -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.1.9 4.9 4.9 0 0 0-8.4 4.5 13.9 13.9 0 0 1-10-5 4.8 4.8 0 0 0 1.5 6.6 4.9 4.9 0 0 1-2.2-.6v.1a4.9 4.9 0 0 0 3.9 4.8 5 5 0 0 1-2.2.1 4.9 4.9 0 0 0 4.6 3.4A9.9 9.9 0 0 1 2 19.5 13.9 13.9 0 0 0 8 21c8 0 12.4-7 12.4-13 0-.2 0-.5 0-.7A9.2 9.2 0 0 0 23 3z"/></svg>
         </a>
-        <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
-            <!-- Ícone SVG do Instagram -->
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-5 2.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/>
-            </svg>
+        <a href="https://instagram.com" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <!-- Ícone SVG Instagram simplificado -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm10 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-5 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
         </a>
     </div>
+
 </body>
 </html>
