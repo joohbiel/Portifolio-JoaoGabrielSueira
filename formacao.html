@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Portfólio João Gabriel Sueira</title>
-<!-- Link para o CSS "Fundo-usado.css" -->
-<link rel="stylesheet" href="Fundo-usado.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formação - João Gabriel Sueira</title>
+
+  <!-- Folhas de estilo corretas -->
+  <link rel="stylesheet" href="nav-buttons.css">
+  <link rel="stylesheet" href="social-buttons.css">
+  <link rel="stylesheet" href="Fundo-usado.css">
+
+  <!-- Estilo interno adicional -->
+  <style>
+    h1 {
+      font-family: Arial, sans-serif;
+      font-size: 32px;
+      color: #ffffff;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .formacao {
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <h2 class="logo">Portfólio João Gabriel Sueira</h2>
-        <nav>
-            <a href="index.html" class="active">Início</a>
-            <a href="formacao.html">Formação Acadêmica</a>
-            <a href="contatos.html">Contatos</a>
-        </nav>
-    </div>
-</header>
+  <!-- Botões de navegação -->
+  <div class="nav-buttons">
+    <a href="index.html" class="nav-button">Início</a>
+    <a href="formacao.html" class="nav-button">Formação</a>
+    <a href="contato.html" class="nav-button">Contato</a>
+  </div>
 
-<main>
-    <h3 class="titulo">Sobre Mim</h3>
-    <p class="descricao">
-        Oi! Sou João Gabriel Sueira! Sou um profissional com sólida experiência em finanças, riscos e gestão, tendo atuado em grandes instituições como Votorantim e Itaú. Após anos contribuindo com a análise estratégica, gestão e negócios estou em transição de carreira para a área de tecnologia com foco em análise de dados. Atualmente, atuo fortemente com Power BI, desenvolvendo dashboards complexos para a tomada de decisões na área de riscos do Santander.
-    </p>
-    <p class="descricao">Estou focado no desenvolvimento contínuo das minhas habilidades em:</p>
-    <ul class="descricao">
-        <li>Análise de Dados com Python, SQL e Excel avançado</li>
-        <li>Visualização de Dados com Power BI e Tableau</li>
-        <li>Modelagem de Dados, estatística aplicada e fundamentos de Machine Learning</li>
-    </ul>
-    <p class="descricao">Meu objetivo é unir minha bagagem em negócios com ferramentas modernas de Business Intelligence, atuando como Analista de BI para gerar insights e apoiar a tomada de decisões baseadas em dados.</p>
-</main>
+  <h1>Minha Formação</h1>
 
-<div class="social-buttons" aria-label="Redes Sociais">
-    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
-        <!-- SVG LinkedIn -->
-    </a>
-    <a href="https://github.com/joohbiel" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
-        <!-- SVG GitHub -->
-    </a>
-    <a href="https://www.kaggle.com/joohbiel" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Kaggle">
-        <!-- SVG Kaggle -->
-    </a>
-</div>
+  <div class="formacao">
+    <p>Sou formado em Gestão Financeira, com duas pós-graduações: uma em Finanças com ênfase em Mercado de Capitais, e outra em Finanças e Investimentos. Atualmente, estou cursando Administração, e me dedicando a aprimorar habilidades técnicas como Excel, Power BI e SQL para atuar nas áreas de BI, crédito, riscos ou planejamento estratégico.</p>
+  </div>
+
+  <!-- Botões sociais -->
+  <div class="social-buttons">
+    <a href="https://www.instagram.com/seu_perfil" target="_blank" class="social-button instagram">Instagram</a>
+    <a href="https://www.linkedin.com/in/joaopaulosueira" target="_blank" class="social-button linkedin">LinkedIn</a>
+  </div>
 
 </body>
 </html>
