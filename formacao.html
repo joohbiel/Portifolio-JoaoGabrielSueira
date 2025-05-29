@@ -1,64 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Formação - João Gabriel Sueira</title>
+    <meta charset="UTF-8">
+    <title>Contato - João Gabriel Sueira</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos externos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
 
-  <!-- Folhas de estilo corretas -->
-  <link rel="stylesheet" href="nav-buttons.css">
-  <link rel="stylesheet" href="social-buttons.css">
-  <link rel="stylesheet" href="Fundo-usado.css">
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-  <!-- Estilo interno adicional -->
-  <style>
-    h1 {
-      font-family: Arial, sans-serif;
-      font-size: 32px;
-      color: #ffffff;
-      text-align: center;
-      margin-top: 20px;
-    }
+        header h1 {
+            margin: 0;
+        }
 
-    .formacao {
-      color: #ffffff;
-      font-family: Arial, sans-serif;
-      font-size: 20px;
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 10px;
-    }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
 
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-    }
-  </style>
+        .container h2 {
+            margin-top: 0;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .social-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+        }
+
+        .social-buttons a:nth-child(1) {
+            background-color: #0077b5; /* LinkedIn */
+        }
+
+        .social-buttons a:nth-child(2) {
+            background-color: #333; /* GitHub */
+        }
+
+        .social-buttons a:nth-child(3) {
+            background-color: #e4405f; /* Instagram */
+        }
+
+        .social-buttons a:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>João Gabriel Sueira</h1>
+        <p>Analista de Dados | Financeiro | BI</p>
+    </header>
 
-  <!-- Botões de navegação -->
-  <div class="nav-buttons">
-    <a href="index.html" class="nav-button">Início</a>
-    <a href="formacao.html" class="nav-button">Formação</a>
-    <a href="contato.html" class="nav-button">Contato</a>
-  </div>
+    <div class="container">
+        <h2>Entre em Contato</h2>
+        <p>Fique à vontade para entrar em contato comigo através das redes sociais ou por e-mail.</p>
 
-  <h1>Minha Formação</h1>
+        <div class="contact-info">
+            <p><strong>Email:</strong> joaogabrielsueira@email.com</p>
+            <p><strong>Telefone:</strong> (11) 91234-5678</p>
+        </div>
 
-  <div class="formacao">
-    <p>Sou formado em Gestão Financeira, com duas pós-graduações: uma em Finanças com ênfase em Mercado de Capitais, e outra em Finanças e Investimentos. Atualmente, estou cursando Administração, e me dedicando a aprimorar habilidades técnicas como Excel, Power BI e SQL para atuar nas áreas de BI, crédito, riscos ou planejamento estratégico.</p>
-  </div>
+        <div class="social-buttons">
+            <a href="https://www.linkedin.com/in/joaogabrielsueira" target="_blank">LinkedIn</a>
+            <a href="https://github.com/joaogabrielsueira" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/joaogabrielsueira" target="_blank">Instagram</a>
+        </div>
+    </div>
 
-  <!-- Botões sociais -->
-  <div class="social-buttons">
-    <a href="https://www.instagram.com/seu_perfil" target="_blank" class="social-button instagram">Instagram</a>
-    <a href="https://www.linkedin.com/in/joaopaulosueira" target="_blank" class="social-button linkedin">LinkedIn</a>
-  </div>
-
+    <footer>
+        <div class="social-buttons">
+            <a href="https://www.linkedin.com/in/joaogabrielsueira" target="_blank">LinkedIn</a>
+            <a href="https://github.com/joaogabrielsueira" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/joaogabrielsueira" target="_blank">Instagram</a>
+        </div>
+        <p>© 2024 João Gabriel Sueira. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
