@@ -1,61 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Formação</title>
-
-    <!-- Link para os arquivos CSS externos conforme solicitado -->
-    <link rel="stylesheet" href="Fundo-usado.css" />
-    <link rel="stylesheet" href="nav-buttons.css" />
-    <link rel="stylesheet" href="social-buttons.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formação - João Gabriel Sueira</title>
+  <link rel="stylesheet" href="Fundo-usado.css" />
+  <link rel="stylesheet" href="nav-buttons.css" />
+  <link rel="stylesheet" href="social-buttons.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">Minha Logo</div>
-            <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="formacao.html">Formação</a>
-                <a href="contatos.html">Contatos</a>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <h1>Formação Acadêmica</h1>
+    <nav>
+      <a href="index.html" class="nav-button">Início</a>
+      <a href="formacao.html" class="nav-button">Formação</a>
+      <a href="contatos.html" class="nav-button">Contatos</a>
+    </nav>
+  </header>
 
-    <main>
-        <h1 class="titulo">Minha Formação</h1>
-        <p class="descricao">Aqui você encontra detalhes sobre minha formação acadêmica e cursos realizados.</p>
+  <main>
+    <section>
+      <h2>Graduação</h2>
+      <p>Administração (cursando) - Universidade XYZ</p>
+      <p>Gestão Financeira - Faculdade ABC</p>
+    </section>
 
-        <!-- Conteúdo relacionado a gift cards, textos, espaçamento etc. permanece aqui -->
+    <section>
+      <h2>Pós-graduação</h2>
+      <p>Finanças com ênfase em Mercado de Capitais - Universidade DEF</p>
+      <p>Finanças e Investimentos - Universidade GHI</p>
+    </section>
+  </main>
 
-        <!-- Exemplo genérico de conteúdo: -->
-        <section class="cards">
-            <article class="card">
-                <h2>Curso XYZ</h2>
-                <p>Descrição do curso XYZ, datas e detalhes.</p>
-            </article>
-            <article class="card">
-                <h2>Curso ABC</h2>
-                <p>Descrição do curso ABC, detalhes e observações.</p>
-            </article>
-        </section>
-    </main>
-
-    <!-- Botões sociais fixos (exemplo com 3 redes) -->
-    <div class="social-buttons">
-        <a href="https://facebook.com" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-            <!-- Ícone SVG Facebook simplificado -->
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-3v-3h3v-2.3c0-3 1.8-4.6 4.5-4.6 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 1-2 2v2.2h3.4l-.5 3h-2.9v7A10 10 0 0 0 22 12z"/></svg>
-        </a>
-        <a href="https://twitter.com" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-            <!-- Ícone SVG Twitter simplificado -->
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.1.9 4.9 4.9 0 0 0-8.4 4.5 13.9 13.9 0 0 1-10-5 4.8 4.8 0 0 0 1.5 6.6 4.9 4.9 0 0 1-2.2-.6v.1a4.9 4.9 0 0 0 3.9 4.8 5 5 0 0 1-2.2.1 4.9 4.9 0 0 0 4.6 3.4A9.9 9.9 0 0 1 2 19.5 13.9 13.9 0 0 0 8 21c8 0 12.4-7 12.4-13 0-.2 0-.5 0-.7A9.2 9.2 0 0 0 23 3z"/></svg>
-        </a>
-        <a href="https://instagram.com" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-            <!-- Ícone SVG Instagram simplificado -->
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm10 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-5 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
-        </a>
+  <footer>
+    <div class="social-buttons" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 20px;">
+      <a href="https://linkedin.com/in/joaopaulosueira" class="social-button linkedin" target="_blank">LinkedIn</a>
+      <a href="https://github.com/joaopaulosueira" class="social-button github" target="_blank">GitHub</a>
+      <a href="mailto:joaopaulo@email.com" class="social-button email">Email</a>
     </div>
-
+  </footer>
 </body>
 </html>
