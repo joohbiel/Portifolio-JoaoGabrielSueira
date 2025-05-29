@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Formação - João Gabriel Sueira</title>
-  <link rel="stylesheet" href="Fundo-usado.css" />
-  <link rel="stylesheet" href="nav-buttons.css" />
-  <link rel="stylesheet" href="social-buttons.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formação Acadêmica - João Gabriel Sueira</title>
+    <link rel="stylesheet" href="Fundo-usado.css">
+    <link rel="stylesheet" href="nav-buttons.css">
+    <link rel="stylesheet" href="social-buttons.css">
 </head>
 <body>
-  <header>
-    <h1>Formação Acadêmica</h1>
-    <nav>
-      <a href="index.html" class="nav-button">Início</a>
-      <a href="formacao.html" class="nav-button">Formação</a>
-      <a href="contatos.html" class="nav-button">Contatos</a>
-    </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Graduação</h2>
-      <p>Administração (cursando) - Universidade XYZ</p>
-      <p>Gestão Financeira - Faculdade ABC</p>
-    </section>
-
-    <section>
-      <h2>Pós-graduação</h2>
-      <p>Finanças com ênfase em Mercado de Capitais - Universidade DEF</p>
-      <p>Finanças e Investimentos - Universidade GHI</p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="social-buttons" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 20px;">
-      <a href="https://linkedin.com/in/joaopaulosueira" class="social-button linkedin" target="_blank">LinkedIn</a>
-      <a href="https://github.com/joaopaulosueira" class="social-button github" target="_blank">GitHub</a>
-      <a href="mailto:joaopaulo@email.com" class="social-button email">Email</a>
+<header>
+    <div class="container">
+        <h2 class="logo">João Gabriel Sueira</h2>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="formacao.html" class="active">Formação Acadêmica</a>
+            <a href="contatos.html">Contatos</a>
+        </nav>
     </div>
-  </footer>
+</header>
+
+<main>
+    <h3 class="titulo">Formação Acadêmica</h3>
+
+    <h4 class="subtitulo">Graduação</h4>
+    <div class="gift-card-container">
+        <div class="gift-card">
+            <h4>Gestão Financeira</h4>
+            <p class="instituicao">Centro Universitário das Américas</p>
+            <p class="conclusao">Conclusão: Dezembro de 2019</p>
+        </div>
+        <div class="gift-card">
+            <h4>Bacharelado em Administração</h4>
+            <p class="instituicao">Universidade Virtual do Estado de São Paulo</p>
+            <p class="conclusao">Previsão de Conclusão: Junho de 2027</p>
+        </div>
+    </div>
+
+    <h4 class="subtitulo">Pós-Graduação</h4>
+    <div class="gift-card-container">
+        <div class="gift-card">
+            <h4>MBA em Finanças com Ênfase em Mercado de Capitais</h4>
+            <p class="instituicao">Faculdade Descomplica</p>
+            <p class="conclusao">Conclusão: Junho 2022</p>
+        </div>
+        <div class="gift-card">
+            <h4>MBA em Planejamento Financeiro: Economia, Investimentos e Proteção</h4>
+            <p class="instituicao">Faculdade Brasileira de Tributação</p>
+            <p class="conclusao">Previsão de Conclusão: Junho 2024</p>
+        </div>
+    </div>
+</main>
+
+<!-- Botões sociais fixos -->
+<div class="social-buttons" aria-label="Redes Sociais">
+    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+        <!-- SVG LinkedIn -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1..."/></svg>
+    </a>
+
+    <a href="https://github.com/joohbiel" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+        <!-- SVG GitHub -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2..."/></svg>
+    </a>
+
+    <a href="https://www.instagram.com/be.geek" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+        <!-- SVG Instagram -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 202a53 53 0 1 0 53 53..."/></svg>
+    </a>
+</div>
+
 </body>
 </html>
