@@ -105,44 +105,47 @@
             background-color: #000070;
         }
 
-        /* Botões sociais no canto inferior direito */
+            /* Botões sociais empilhados no canto inferior direito */
         .social-buttons {
             position: fixed;
             bottom: 20px;
             right: 20px;
             display: flex;
-            flex-direction: column;
+            flex-direction: column; /* empilha verticalmente */
             gap: 15px;
             z-index: 1000;
         }
-        .social-buttons a {
+
+        .social-icon {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 44px;
             height: 44px;
             border-radius: 50%;
-            background-color: #00008B;
-            border: 2px solid transparent;
-            color: white;
+            background-color: transparent;
+            border: 2px solid #00008B;
+            color: #00008B;
             text-decoration: none;
-            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-            box-shadow: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
-        .social-buttons a svg {
+
+        .social-icon svg {
             width: 22px;
             height: 22px;
-            fill: white;
+            fill: #00008B;
             pointer-events: none;
             transition: fill 0.3s ease;
         }
-        .social-buttons a:hover {
-            background-color: transparent;
+
+        .social-icon:hover {
+            background-color: #00008B;
+            color: white;
             border-color: #00008B;
-            color: #00008B;
         }
-        .social-buttons a:hover svg {
-            fill: #00008B;
+
+        .social-icon:hover svg {
+            fill: white;
         }
     </style>
 </head>
