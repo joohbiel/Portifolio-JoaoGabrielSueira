@@ -1,51 +1,213 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Contato - João Gabriel Sueira</title>
-    <link rel="stylesheet" href="Fundo-usado.css" />
-    <link rel="stylesheet" href="nav-buttons.css" />
-    <link rel="stylesheet" href="social-buttons.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contatos - Biel Sueira</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <style>
+        body {
+            background-color: #F1F1F1;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            position: relative;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #00008B;
+            padding: 10px 0;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+        }
+        .logo {
+            font-family: 'Georgia', serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #4B72A2;
+            color: white;
+        }
+        nav a.active {
+            background-color: transparent;
+            box-shadow: inset 0 0 0 2px rgba(255,255,255,0.2);
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 15px;
+            color: #333;
+        }
+        .titulo {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .descricao {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .formulario {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+        .formulario label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .formulario input, .formulario textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .formulario textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        .botao-form {
+            background-color: #00008B;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        .botao-form:hover {
+            background-color: #000070;
+        }
+
+            /* Botões sociais empilhados no canto inferior direito */
+        .social-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column; /* empilha verticalmente */
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid #00008B;
+            color: #00008B;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .social-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: #00008B;
+            pointer-events: none;
+            transition: fill 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: #00008B;
+            color: white;
+            border-color: #00008B;
+        }
+
+        .social-icon:hover svg {
+            fill: white;
+        }
+    </style>
 </head>
 <body>
-    <div class="background"></div>
 
-    <nav class="navbar">
-        <a href="index.html" class="nav-button">Início</a>
-        <a href="formacao.html" class="nav-button">Formação</a>
-        <a href="contatos.html" class="nav-button">Contatos</a>
-    </nav>
+<header>
+    <div class="container">
+        <h2 class="logo">João Gabriel Sueira</h2>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="formacao.html">Formação Acadêmica</a>
+            <a href="contatos.html" class="active">Contatos</a>
+        </nav>
+    </div>
+</header>
 
-    <main class="content">
-        <h1>Contatos</h1>
-        <p>Você pode me encontrar nas seguintes plataformas:</p>
+<main>
+    <h3 class="titulo">Contatos</h3>
 
-        <div class="social-buttons-container">
-            <!-- GitHub -->
-            <a href="https://github.com/joaogabrielsueira" target="_blank" class="social-button github">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="24" viewBox="0 0 24 24" width="24">
-                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.2-1.1-1.6-1.1-1.6-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1 3 .8.1-.7.4-1 .7-1.2-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.2-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 3 .1 3.3.8.9 1.2 1.9 1.2 3.2 0 4.4-2.7 5.4-5.3 5.7.4.3.7.9.7 1.8v2.6c0 .3.2.7.8.6a10.9 10.9 0 0 0 7.9-10.9C23.5 5.65 18.35.5 12 .5Z"/>
-                </svg>
-                GitHub
-            </a>
+    <div class="formulario">
+        <h4>Envie sua mensagem</h4>
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/joaopaulogabriels/" target="_blank" class="social-button linkedin">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="24" viewBox="0 0 24 24" width="24">
-                    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zM9 8.5h3.6v2.1h.1c.5-1 1.8-2.1 3.7-2.1 3.9 0 4.6 2.6 4.6 6v9h-4v-8.1c0-1.9 0-4.4-2.7-4.4-2.7 0-3.1 2.1-3.1 4.3V24h-4V8.5z"/>
-                </svg>
-                LinkedIn
-            </a>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
 
-            <!-- Kaggle -->
-            <a href="https://www.kaggle.com/joaopaulogabriels" target="_blank" class="social-button kaggle">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="24" viewBox="0 0 24 24" width="24">
-                    <path d="M20.3 3H18c-.5 0-.9.4-.9.9v5.5L6.3 3.2c-.7-.3-1.4.1-1.4.9v3.1c0 .4.2.8.6 1l8.7 4.6-8.7 4.6c-.4.2-.6.6-.6 1v3.1c0 .8.7 1.2 1.4.9L17.1 14v5.5c0 .5.4.9.9.9h2.3c.5 0 .9-.4.9-.9V3.9c0-.5-.4-.9-.9-.9z"/>
-                </svg>
-                Kaggle
-            </a>
-        </div>
-    </main>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+
+            <button type="submit" class="botao-form">Enviar</button>
+        </form>
+    </div>
+</main>
+
+<!-- Botões sociais fixos -->
+<div class="social-buttons">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+            <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+        </svg>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/joohbiel" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" aria-hidden="true" focusable="false">
+            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.4 17.5-5.5 17.5-12.2 0-6-0.2-26-0.3-47.9-69 15-83.5-33.3-83.5-33.3-11.3-28.9-27.6-36.6-27.6-36.6-22.6-15.5 1.8-15.2 1.8-15.2 25 1.8 38.1 25.8 38.1 25.8 22.2 38 58.3 27 72.5 20.6 2.2-16 8.7-27 15.8-33.3-55-6.2-112.7-27.5-112.7-122.2 0-27 9.7-49 25.6-66.3-2.6-6.2-11.1-31.2 2.4-65 0 0 21-6.7 68.7 25.3a237 237 0 0 1 62.5-8.4c21.2 .1 42.6 2.9 62.5 8.4 47.7-32 68.7-25.3 68.7-25.3 13.5 33.8 5 58.8 2.4 65 15.9 17.3 25.6 39.3 25.6 66.3 0 95-57.9 116-113 122 8.9 7.7 16.9 22.9 16.9 46.1 0 33.2-0.3 60-0.3 68.1 0 6.7 4.6 14.7 17.6 12.2C426.1 457.8 496 362.9 496 252 496 113.3 389.9 8 244.8 8z"/>
+        </svg>
+    </a>
+
+     <!-- Kaggle -->
+    <a href="https://www.kaggle.com/joohbiel" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Kaggle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M304.2 501.5L158.4 320.3 298.2 185c2.6-2.7 1.7-10.5-5.3-10.5h-69.2c-3.5 0-7 1.8-10.5 5.3L80.9 313.5V7.5q0-7.5-7.5-7.5H21.5Q14 0 14 7.5v497q0 7.5 7.5 7.5h51.9q7.5 0 7.5-7.5v-109l30.8-29.3 110.5 140.6c3 3.5 6.5 5.3 10.5 5.3h66.9q5.3 0 6-3z"/></svg>   
+    </svg>
+    </a>
+    </a>
+</div>
+    
 </body>
 </html>
