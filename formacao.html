@@ -1,90 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfólio João Gabriel Sueira - Formação Acadêmica</title>
-
-    <!-- Apenas os 2 arquivos CSS externos -->
-    <link rel="stylesheet" href="style/nav-buttons.css" />
-    <link rel="stylesheet" href="style/social-buttons.css" />
-
-    <style>
-        /* Estilos que não estão nos arquivos externos */
-        body {
-            background-color: #F1F1F1;
-            font-family: 'Georgia', serif;
-            margin: 0;
-            padding-bottom: 80px;
-            position: relative;
-        }
-
-        main {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 15px;
-            color: #333;
-        }
-
-        .titulo {
-            text-align: center;
-            font-size: 40px;
-            margin-bottom: 30px;
-            font-weight: bold;
-        }
-
-        .subtitulo {
-            text-align: center;
-            font-size: 26px;
-            font-weight: normal;
-            margin: 30px 0 20px;
-        }
-
-        .gift-card-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .gift-card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            flex: 1 1 calc(50% - 20px);
-            min-width: 300px;
-            box-sizing: border-box;
-            transition: transform 0.3s ease;
-        }
-
-        .gift-card:hover {
-            transform: scale(1.03);
-        }
-
-        .gift-card h4 {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-
-        .instituicao {
-            color: #777;
-            font-size: 16px;
-            margin-bottom: 6px;
-        }
-
-        .conclusao {
-            font-size: 16px;
-            color: #333;
-        }
-
-        footer {
-            margin-top: 60px;
-            text-align: center;
-            color: #444;
-            font-size: 14px;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfólio João Gabriel Sueira</title>
+<!-- Link para o CSS "Fundo-usado.css" -->
+<link rel="stylesheet" href="Fundo-usado.css" />
 </head>
 <body>
 
@@ -92,209 +13,38 @@
     <div class="container">
         <h2 class="logo">Portfólio João Gabriel Sueira</h2>
         <nav>
-            <a href="index.html" class="nav-button">Início</a>
-            <a href="formacao.html" class="nav-button active">Formação Acadêmica</a>
-            <a href="contatos.html" class="nav-button">Contatos</a>
+            <a href="index.html" class="active">Início</a>
+            <a href="formacao.html">Formação Acadêmica</a>
+            <a href="contatos.html">Contatos</a>
         </nav>
     </div>
 </header>
 
 <main>
-    <h3 class="titulo">Formação Acadêmica</h3>
-
-    <h4 class="subtitulo">Graduação</h4>
-    <div class="gift-card-container">
-        <div class="gift-card">
-            <h4>Gestão Financeira</h4>
-            <p class="instituicao">Centro Universitário das Américas</p>
-            <p class="conclusao">Conclusão: Dezembro de 2019</p>
-        </div>
-        <div class="gift-card">
-            <h4>Bacharelado em Administração</h4>
-            <p class="instituicao">Universidade Virtual do Estado de São Paulo</p>
-            <p class="conclusao">Previsão de Conclusão: Junho de 2027</p>
-        </div>
-    </div>
-
-    <h4 class="subtitulo">Pós-Graduação</h4>
-    <div class="gift-card-container">
-        <div class="gift-card">
-            <h4>MBA em Finanças com Ênfase em Mercado de Capitais</h4>
-            <p class="instituicao">Faculdade Descomplica</p>
-            <p class="conclusao">Conclusão: Junho 2022</p>
-        </div>
-        <div class="gift-card">
-            <h4>MBA em Planejamento Financeiro: Economia, Investimentos e Proteção</h4>
-            <p class="instituicao">Faculdade Brasileira de Tributação</p>
-            <p class="conclusao">Previsão de Conclusão: Junho 2024</p>
-        </div>
-    </div>
+    <h3 class="titulo">Sobre Mim</h3>
+    <p class="descricao">
+        Oi! Sou João Gabriel Sueira! Sou um profissional com sólida experiência em finanças, riscos e gestão, tendo atuado em grandes instituições como Votorantim e Itaú. Após anos contribuindo com a análise estratégica, gestão e negócios estou em transição de carreira para a área de tecnologia com foco em análise de dados. Atualmente, atuo fortemente com Power BI, desenvolvendo dashboards complexos para a tomada de decisões na área de riscos do Santander.
+    </p>
+    <p class="descricao">Estou focado no desenvolvimento contínuo das minhas habilidades em:</p>
+    <ul class="descricao">
+        <li>Análise de Dados com Python, SQL e Excel avançado</li>
+        <li>Visualização de Dados com Power BI e Tableau</li>
+        <li>Modelagem de Dados, estatística aplicada e fundamentos de Machine Learning</li>
+    </ul>
+    <p class="descricao">Meu objetivo é unir minha bagagem em negócios com ferramentas modernas de Business Intelligence, atuando como Analista de BI para gerar insights e apoiar a tomada de decisões baseadas em dados.</p>
 </main>
 
-<!-- Botões sociais fixos -->
 <div class="social-buttons" aria-label="Redes Sociais">
     <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.3..."/></svg>
+        <!-- SVG LinkedIn -->
     </a>
     <a href="https://github.com/joohbiel" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9..."/></svg>
+        <!-- SVG GitHub -->
+    </a>
+    <a href="https://www.kaggle.com/joohbiel" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Kaggle">
+        <!-- SVG Kaggle -->
     </a>
 </div>
-
-<!-- Rodapé -->
-<footer>
-    <p>© 2024 João Gabriel Sueira. Todos os direitos reservados.</p>
-</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfólio João Gabriel Sueira - Formação Acadêmica</title>
-
-    <!-- Apenas os 2 arquivos CSS externos -->
-    <link rel="stylesheet" href="style/nav-buttons.css" />
-    <link rel="stylesheet" href="style/social-buttons.css" />
-
-    <style>
-        /* Estilos que não estão nos arquivos externos */
-        body {
-            background-color: #F1F1F1;
-            font-family: 'Georgia', serif;
-            margin: 0;
-            padding-bottom: 80px;
-            position: relative;
-        }
-
-        main {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 15px;
-            color: #333;
-        }
-
-        .titulo {
-            text-align: center;
-            font-size: 40px;
-            margin-bottom: 30px;
-            font-weight: bold;
-        }
-
-        .subtitulo {
-            text-align: center;
-            font-size: 26px;
-            font-weight: normal;
-            margin: 30px 0 20px;
-        }
-
-        .gift-card-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .gift-card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            flex: 1 1 calc(50% - 20px);
-            min-width: 300px;
-            box-sizing: border-box;
-            transition: transform 0.3s ease;
-        }
-
-        .gift-card:hover {
-            transform: scale(1.03);
-        }
-
-        .gift-card h4 {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-
-        .instituicao {
-            color: #777;
-            font-size: 16px;
-            margin-bottom: 6px;
-        }
-
-        .conclusao {
-            font-size: 16px;
-            color: #333;
-        }
-
-        footer {
-            margin-top: 60px;
-            text-align: center;
-            color: #444;
-            font-size: 14px;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <div class="container">
-        <h2 class="logo">Portfólio João Gabriel Sueira</h2>
-        <nav>
-            <a href="index.html" class="nav-button">Início</a>
-            <a href="formacao.html" class="nav-button active">Formação Acadêmica</a>
-            <a href="contatos.html" class="nav-button">Contatos</a>
-        </nav>
-    </div>
-</header>
-
-<main>
-    <h3 class="titulo">Formação Acadêmica</h3>
-
-    <h4 class="subtitulo">Graduação</h4>
-    <div class="gift-card-container">
-        <div class="gift-card">
-            <h4>Gestão Financeira</h4>
-            <p class="instituicao">Centro Universitário das Américas</p>
-            <p class="conclusao">Conclusão: Dezembro de 2019</p>
-        </div>
-        <div class="gift-card">
-            <h4>Bacharelado em Administração</h4>
-            <p class="instituicao">Universidade Virtual do Estado de São Paulo</p>
-            <p class="conclusao">Previsão de Conclusão: Junho de 2027</p>
-        </div>
-    </div>
-
-    <h4 class="subtitulo">Pós-Graduação</h4>
-    <div class="gift-card-container">
-        <div class="gift-card">
-            <h4>MBA em Finanças com Ênfase em Mercado de Capitais</h4>
-            <p class="instituicao">Faculdade Descomplica</p>
-            <p class="conclusao">Conclusão: Junho 2022</p>
-        </div>
-        <div class="gift-card">
-            <h4>MBA em Planejamento Financeiro: Economia, Investimentos e Proteção</h4>
-            <p class="instituicao">Faculdade Brasileira de Tributação</p>
-            <p class="conclusao">Previsão de Conclusão: Junho 2024</p>
-        </div>
-    </div>
-</main>
-
-<!-- Botões sociais fixos -->
-<div class="social-buttons" aria-label="Redes Sociais">
-    <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-sueira" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.3..."/></svg>
-    </a>
-    <a href="https://github.com/joohbiel" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9..."/></svg>
-    </a>
-</div>
-
-<!-- Rodapé  -->
-<footer>
-    <p>© 2024 João Gabriel Sueira. Todos os direitos reservados.</p>
-</footer>
 
 </body>
 </html>
