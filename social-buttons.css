@@ -1,0 +1,42 @@
+/* social-buttons.css */
+
+.social-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #00008B;
+    color: #00008B;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: #00008B;
+    transition: fill 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #00008B;
+    color: white;
+    border-color: #00008B;
+}
+
+.social-icon:hover svg {
+    fill: white;
+}
